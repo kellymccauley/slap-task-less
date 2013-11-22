@@ -8,7 +8,6 @@ var path = require('path')
   , context = require('slap/context')
   ;
 
-
 shell.config.fatal = true;
 shell.config.silent = true;
 
@@ -23,14 +22,6 @@ module.exports = function(taskSetName, taskConfig, taskSets, slapConfig, callbac
     , errMsg
     , _err
     ;
-
-
-  // logKey = [
-  //   clc.bold('['), 
-  //   clc.bold.green(taskSetName), 
-  //   clc.bold(':'),
-  //   clc.bold.yellow('less'),
-  //   clc.bold(']')].join('');
 
   logKey = [
     '[', 
